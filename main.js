@@ -85,33 +85,100 @@
 
 //     },1000)
 // }
-var inputfor=document.getElementById("input_minit");
-var secend=59;
-function printHour(){
-    document.getElementById("h1_minit").innerHTML=inputfor.value+":";
-    setInterval(()=>{
-        document.getElementById("h1_minit").innerHTML=inputfor.value-1 +":";
-        input_minit.value=input_minit.value--;
+// var inputfor=document.getElementById("input_minit");
+// var secend=59;
+// function printHour(){
+//     document.getElementById("h1_minit").innerHTML=inputfor.value+":";
+//     setInterval(()=>{
+//         document.getElementById("h1_minit").innerHTML=inputfor.value-1 +":";
+//         input_minit.value=input_minit.value--;
 
-    },60000)
+//     },60000)
 
-}
+// }
 
-var secendset;
-function printSecend(){
-    if(inputfor.value!=null){
-    secendset= setInterval(()=>{
-    document.getElementById("h1_secend").innerHTML=secend;
+// var secendset;
+// function printSecend(){
+//     if(inputfor.value!=null){
+//     secendset= setInterval(()=>{
+//     document.getElementById("h1_secend").innerHTML=secend;
     
-    secend=secend-1;
-    if(secend==0){
-        secend=59;
-    }
+//     secend=secend-1;
+//     if(secend==0){
+//         secend=59;
+//     }
         
-},1000)
-}}
+// },1000)
+// }}
 
 
-function stopTimer(){
-    clearInterval(printHour)
+// function stopTimer(){
+//     clearInterval(printHour)
+// }
+
+//שאלה 6
+// function timeLaft(){
+// var timee =new Date();
+// var hour=timee.getHours();
+// var minit=timee.getMinutes();
+// var secend=timee.getSeconds();
+// user_input=document.getElementById("user_time");
+// console.log();
+// }
+
+
+//setTimeout
+
+//שאלה1
+
+// function printSevenDiley(){
+//     document.getElementById("h1_name").innerText="yehuda";
+// }
+
+// setTimeout(printSevenDiley,7000);
+
+//שאלה 2
+
+// function printHallo(){
+// document.getElementById("h1_hallo").innerText="hallo";
+// }
+
+// setTimeout(printHallo,5000);
+
+// function printBye(){
+// document.getElementById("h1_hallo").innerText="bye";
+// }
+// setTimeout(printBye,5500);
+
+//שאלה 3
+
+// var clock=new Date();
+// var hourss=clock.getHours();
+// var Minutess=clock.getMinutes();
+// function printClock(){
+//     document.getElementById("h1_clock").innerHTML=hourss+":"+Minutess;
+// }
+
+// setTimeout(printClock,90000);
+
+
+//שאלה 4
+
+// function printIlovet(){
+//     document.getElementById("h1_i").innerHTML="i love timers"
+// }
+// var printi= setTimeout(printIlovet,10000);
+
+// function exitPrintIL(){
+// clearTimeout(printi);
+// }
+
+//שאלה 5
+
+var myname=document.getElementById("h1_id");
+myname.style.color="blue";
+
+function ChangeColor(){
+    myname.style.color="red";
 }
+setTimeout(ChangeColor,3000);
