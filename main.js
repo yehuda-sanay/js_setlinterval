@@ -126,6 +126,18 @@
 // console.log();
 // }
 
+//שאלה 7 
+
+function printTime(){
+var dateObject = new Date();
+
+var secondsFromDate= dateObject.getSeconds();
+var secendsFromInput = parseInt(time_input.value.substr(6));
+
+
+    time_element.innerHTML=time_input.value;
+    
+}
 
 //setTimeout
 
@@ -175,10 +187,10 @@
 
 //שאלה 5
 
-var myname=document.getElementById("h1_id");
-myname.style.color="blue";
+// var myname=document.getElementById("h1_id");
+// myname.style.color="blue";
 
-function ChangeColor(){
-    myname.style.color="red";
-}
-setTimeout(ChangeColor,3000);
+// function ChangeColor(){
+//     myname.style.color="red";
+// }
+// setTimeout(ChangeColor,3000);
